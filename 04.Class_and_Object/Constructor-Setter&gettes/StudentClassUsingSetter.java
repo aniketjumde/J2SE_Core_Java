@@ -1,13 +1,13 @@
 import java.io.*;
 import java.util.*;
 
-class Student
+class Student 
 {
 	private int rno;
 	private String name;
 	private Double per;
 
-	public Student() {}
+	public Student() { }
 
 	public Student(int rno,String name,Double per)
 	{
@@ -16,36 +16,66 @@ class Student
 		this.per=per;
 	}
 
+	public void setRno(int rno)
+	{
+		this.rno=rno;
+	}	
+
+	public void setName(String name)
+	{
+		this.name=name;
+	}
+
+	public void setPer(Double per)
+	{
+		this.per=per;
+	}
+
+	public int getRno()
+	{
+		return rno;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public Double getPer()
+	{
+		return per;
+	}
+
 	public void display()
 	{
 		System.out.println(rno+" | "+name+" | "+per);
 	}
-
 }
 
-public class StudentClass
+public class StudentClassUsingSetter
 {
 	public static void main(String[] args) throws Exception
 	{
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.print("How many Student :");
-		int n=Integer.parseInt(br.readLine());
+		int n=Integer.parseInt(bf.readLine());
 
 		Student S[]=new Student[n];
 
 		for(int i=0;i<S.length;i++)
 		{
+			S[i]=new Student();
+
 			System.out.print("Enter the Roll No:");
-			int rno=Integer.parseInt(br.readLine());
+			S[i].setRno(Integer.parseInt(bf.readLine()));
 
 			System.out.print("Enter the name :");
-			String name=br.readLine();
+			S[i].setName(bf.readLine());
 
 			System.out.print("Enter the Persentage :");
-			Double per=Double.parseDouble(br.readLine());
-
-			S[i]=new Student(rno,name,per);
+			S[i].setPer(Double.parseDouble(bf.readLine()));
+	
 		}
 
 		System.out.println("\nStudent Details:");
