@@ -15,7 +15,7 @@ class B extends A
 {
 	private int j=20;
 
-	public void show()
+	public void display()
 	{
 		System.out.println("B's Show  : "+j);
 	}
