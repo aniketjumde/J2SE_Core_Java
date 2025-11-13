@@ -1,0 +1,4 @@
+Name: Pradeep Jadhav
+Email: jadhavpradeep9087.com
+Experience: 5 years in data analysis
+Skills: SQL, Excel, Python

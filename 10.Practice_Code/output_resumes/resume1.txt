@@ -1,0 +1,3 @@
+Name: Aniket Jumde
+Email: aniketjumde55@gmail.com
+Skills: Java, Python, SQL
