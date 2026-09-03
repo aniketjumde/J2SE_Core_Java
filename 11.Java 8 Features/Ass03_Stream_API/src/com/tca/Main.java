@@ -31,6 +31,13 @@ public class Main {
 			   .sorted()
 			   .forEach(n->System.out.println(n));
 
+		// Method Refference
+		List<String> names =
+			    Arrays.asList("Rahul", "Amit", "Priya");
+
+			names.forEach(
+			    System.out::println
+			);
 
 		
 		
